@@ -1,0 +1,215 @@
+/*! Navbar */
+.nav-links li {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.nav-links li .nav-link:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.navs {
+  background-color: rgb(0, 86, 139);
+  opacity: 0.9;
+}
+
+/*! Home Page */
+.home-page {
+  width: 80%;
+  margin: auto;
+}
+
+.home-page p {
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+.carousel-item img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.face-img {
+  margin-top: 3rem;
+  width: 400px;
+}
+
+/*! About Page */
+.about-page {
+  height: 100vh;
+}
+
+.about-img {
+  margin-top: 5rem;
+  width: 500px;
+}
+
+.about-par {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+
+/*! Gallery Page */
+.gallery-page img {
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+  width: 450px;
+  height: 350px;
+  border-radius: 70px;
+}
+
+.gallery-page p {
+  font-size: 1.2rem;
+}
+
+.gallery-page img:hover,
+.buttons img:hover,
+.buttons button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+/*! Login Page */
+.login-btn {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.4rem;
+  background-color: inherit;
+  color: white;
+  font-size: 1.1rem;
+  width: 6rem;
+}
+
+.login input {
+  border: 1.5px solid rgb(5, 119, 190);
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.login input:focus {
+  box-shadow: 2px 2px 15px rgb(5, 119, 190);
+  transition: all 1s;
+}
+
+/*! Notfound Page */
+.notfound-page {
+  height: 100vh;
+}
+
+.notfound-page img {
+  width: 500px;
+}
+
+.notfound-page h4 {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.notfound-page button {
+  font-weight: bold;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: inherit;
+  color: rgb(5, 119, 190);
+  width: 50%;
+  border: 1px solid rgb(5, 119, 190);
+  border-radius: 10px;
+}
+
+/*! Buttons */
+.buttons {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.btn-page {
+  background-color: inherit;
+  color: rgb(5, 119, 190);
+  border: 1px solid rgb(5, 119, 190);
+  border-radius: 10px;
+}
+
+.btn-page:hover,
+.notfound-page button:hover {
+  transition: all 1s;
+  box-shadow: 2px 2px 15px rgb(5, 119, 190);
+}
+
+h4 {
+  color: rgb(5, 119, 190);
+}
+
+/*! Responsive */
+@media (max-width: 570px) {
+  .face-img {
+    margin-top: 0;
+    width: 200px;
+  }
+
+  .nav-links li {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .about-img {
+    width: 230px;
+  }
+  .img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-page {
+    height: 100%;
+  }
+
+  .about-par {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0;
+  }
+
+  .home-page {
+    height: 100%;
+  }
+
+  .gallery-page img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .notfound-page h4 {
+    margin-top: 7rem;
+    font-size: 1rem;
+  }
+
+  .notfound-page img {
+    width: 200px;
+  }
+
+  .home-page p {
+    padding: 0;
+    font-size: 1.1rem;
+  }
+}
