@@ -7,7 +7,6 @@ import Login from "./pages/Login";
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
 import "./App.css";
-import HomePage from "./components/HomePage";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
@@ -16,15 +15,13 @@ function App() {
 
   return (
     <div
-      style={{ transition: "all 1s", height: "100%" }}
+      style={{ transition: "all 1s" }}
       className={theme ? `bg-dark text-white` : `bg-light text-dark`}
     >
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<HomePage />} />
-          </Route>
+          <Route path="/contextapi-example" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<PrivateRouter />}>
             <Route path="" element={<Gallery />} />

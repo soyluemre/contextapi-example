@@ -49,7 +49,10 @@ const Nav2 = () => {
             <div className="collapse navbar-collapse" id="navbarButtonsExample">
               <ul className="nav-links navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active text-white" to="/">
+                  <Link
+                    className="nav-link active text-white"
+                    to="/contextapi-example"
+                  >
                     Ana Sayfa
                   </Link>
                   <li className="nav-item">
@@ -117,7 +120,10 @@ const Nav2 = () => {
             <div className="collapse navbar-collapse" id="navbarButtonsExample">
               <ul className="nav-links navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item ">
-                  <Link className="nav-link active text-white" to="/">
+                  <Link
+                    className="nav-link active text-white"
+                    to="/contextapi-example"
+                  >
                     Home
                   </Link>
                   <li className="nav-item">

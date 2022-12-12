@@ -19,7 +19,9 @@ const NotFound = () => {
           </h4>
           <img src={notfoundImage} alt="" />
           <br />
-          <button onClick={() => navigate("/")}>ANA SAYFA</button>
+          <button onClick={() => navigate("/contextapi-example")}>
+            ANA SAYFA
+          </button>
         </div>
       ) : (
         <div className="notfound-page container mt-5 text-center">
@@ -32,7 +34,7 @@ const NotFound = () => {
           </h4>
           <img src={notfoundImage} alt="" />
           <br />
-          <button onClick={() => navigate("/")}>HOME</button>
+          <button onClick={() => navigate("/contextapi-example")}>HOME</button>
         </div>
       )}
     </>

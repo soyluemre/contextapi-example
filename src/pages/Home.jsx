@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { LanguageContext } from "../context/LanguageContext";
 import { LoginContext } from "../context/LoginContext";
-import faceImg from "../img/face.png";
+import faceImg from "../img/face2.png";
 
 const Home = () => {
   const { login } = useContext(LoginContext);
@@ -22,13 +22,13 @@ const Home = () => {
       <div>
         {/* Dil seçeneğini kontrol edin */}
         {language === "en" ? (
-          <div className="container mt-5">
+          <div className="container">
             <div className="row home-page">
               <div className="col-sm-12 col-lg-6">
-                <img className="face-img" src={faceImg} alt="" />
+                <img className="face-img" src={faceImg} alt="..." />
               </div>
               <div className="col-sm-12 col-lg-6">
-                <h4 className="mt-5 display-5 text-center">HELLO!</h4>
+                <h4 className="display-5 text-center">HELLO!</h4>
                 <p>
                   Welcome Art Lover!
                   <br />
@@ -112,13 +112,13 @@ const Home = () => {
             <br />
           </div>
         ) : (
-          <div className="container mt-5">
+          <div className="container">
             <div className="row home-page">
               <div className="col-sm-12 col-lg-6">
                 <img className="face-img" src={faceImg} alt="..." />
               </div>
               <div className="col-sm-12 col-lg-6">
-                <h4 className="mt-5 display-5 text-center">MERHABA!</h4>
+                <h4 className="display-5 text-center">MERHABA!</h4>
                 <p>
                   Hoşgeldin Sanatsever!
                   <br />
